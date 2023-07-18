@@ -1,0 +1,124 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  -webkit-tap-highlight-color: #fff0;
+  -webkit-focus-ring-color: #fff0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  position: relative;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: .8rem;
+}
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: #ccc;
+  height: 4000px;
+  padding-top: 100px;
+}
+
+.inner {
+  background-color: red;
+  width: 75%;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.bannerAlert {
+  z-index: 999;
+  background-color: #064c94;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bannerAlert.--active {
+  display: block;
+}
+
+.bannerAlert__content {
+  text-align: center;
+  padding: 15px 50px 12px 20px;
+  position: relative;
+}
+
+@media (width <= 767px) {
+  .bannerAlert__content {
+    text-align: left;
+  }
+}
+
+.bannerAlert__text {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.42;
+}
+
+@media (width <= 767px) {
+  .bannerAlert__text {
+    font-size: 14px;
+  }
+}
+
+.bannerAlert__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.bannerAlert__icon {
+  fill: #fff;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  transition: all .25s;
+  display: block;
+}
+
+.bannerAlert__icon:hover {
+  fill: #9eaab6;
+}
+
+/*# sourceMappingURL=index.4a508c1d.css.map */

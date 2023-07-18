@@ -1,0 +1,13 @@
+{
+  "name": "banner",
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "serve": "parcel serve src/index.pug",
+    "build": "parcel build src/index.pug --no-optimize --public-url ./"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.4.0",
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "latest"
+  }
+}
